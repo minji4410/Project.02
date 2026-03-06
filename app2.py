@@ -4,47 +4,64 @@ import streamlit as st
 st.set_page_config(page_title="돌봄 건강 지킴이", page_icon="🦾", layout="centered")
 
 st.markdown("""
+    # 고급스러운 CSS 디자인 적용 (폰트 및 배경색 개선 버전)
+st.markdown("""
     <style>
-    .stApp { background-color: #F8FAFC; }
+    /* 1. 구글 폰트(Pretendard 느낌의 Noto Sans) 불러오기 */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap');
+
+    /* 2. 전체 배경색 및 기본 폰트 설정 */
+    .stApp { 
+        background-color: #F0F4F8; /* 부드러운 연회색/파란색 톤 배경 */
+        font-family: 'Noto Sans KR', sans-serif !important;
+    }
+    
+    /* 3. 메인 타이틀 디자인 (그라데이션과 둥근 모서리) */
     .mobile-title {
-        font-size: 26px !important;
-        color: #065F46;
+        font-size: 28px !important;
+        color: #FFFFFF;
         font-weight: 800;
         text-align: center;
-        padding: 20px;
-        background: white;
-        border-radius: 20px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        margin-bottom: 25px;
+        padding: 25px 15px;
+        background: linear-gradient(135deg, #10B981 0%, #059669 100%); /* 세련된 그린 그라데이션 */
+        border-radius: 0px 0px 20px 20px; /* 상단은 채우고 하단만 둥글게 */
+        margin: -1rem -1rem 25px -1rem; /* 화면 끝까지 채우기 */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
+    
+    /* 4. 카드형 박스 디자인 (배경과 대비되는 화이트) */
     .m-card {
-        background-color: white;
-        padding: 15px;
-        border-radius: 18px;
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 15px;
         margin-bottom: 20px;
-        border-left: 8px solid #10B981;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        border: none;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        line-height: 1.6;
     }
+    
+    /* 5. 버튼 디자인 (좀 더 입체감 있게) */
     .stButton>button {
         width: 100%;
-        height: 55px;
-        font-size: 18px !important;
-        font-weight: bold !important;
-        border-radius: 15px !important;
-        background-color: #10B981 !important;
+        background: #10B981 !important;
         color: white !important;
+        border: none !important;
+        border-radius: 12px !important;
+        padding: 10px !important;
+        font-weight: 700 !important;
+        transition: 0.3s;
     }
-    /* 영상 제목 스타일 */
-    .video-label {
-        font-size: 14px;
-        font-weight: bold;
-        color: #475569;
+    
+    /* 6. 체크박스 등 텍스트 가독성 향상 */
+    .stCheckbox {
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
         margin-bottom: 5px;
-        text-align: center;
     }
     </style>
     """, unsafe_allow_html=True)
-
+    
 # 2. 상단 헤더
 st.markdown('<div class="mobile-title">🦾 돌봄 가족 건강 센터</div>', unsafe_allow_html=True)
 
@@ -124,3 +141,4 @@ elif menu == "🧘 부위별 맞춤 영상":
 st.divider()
 
 st.markdown("<p style='text-align: center; color: #64748B; font-size: 12px;'>제작: 우석대학교 물리치료학과 김민지<br>본 사이트는 학술 목적으로 제작되었습니다.</p>", unsafe_allow_html=True)
+
