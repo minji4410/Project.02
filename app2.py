@@ -93,7 +93,7 @@ elif menu == "🧘 부위별 맞춤 영상":
         st.info("💡 목,어깨가 뭉친것처럼 아플때 이 동작을 해보세요!")
         with col2:
             st.markdown('<p class="video-label">📺 동작 2</p>', unsafe_allow_html=True)
-            st.video(https://youtube.com/watch?v=vU1UClVSjAg?si=Ig-TmUFgQR7CT326")
+            st.video("https://youtube.com/watch?v=vU1UClVSjAg?si=Ig-TmUFgQR7CT326")
         st.info("💡 팁: 턱을 당기고 어깨를 뒤로 펴는 동작을 반복하세요.")
         
     elif part == "허리":
@@ -122,4 +122,5 @@ elif menu == "🧘 부위별 맞춤 영상":
 
 # 4. 푸터
 st.divider()
+
 st.markdown("<p style='text-align: center; color: #64748B; font-size: 12px;'>제작: 우석대학교 물리치료학과 김민지<br>본 사이트는 학술 목적으로 제작되었습니다.</p>", unsafe_allow_html=True)
