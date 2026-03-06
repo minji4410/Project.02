@@ -1,46 +1,60 @@
 import streamlit as st
 
-# 1. 페이지 설정 및 모바일 우선 디자인 CSS
-st.set_page_config(page_title="돌봄 건강 지킴이", page_icon="🦾", layout="centered")
+# 1. 페이지 설정
+st.set_page_config(page_title="돌봄 건강 센터", page_icon="🦾", layout="centered")
 
-st.markdown("""
-    # 고급스러운 CSS 디자인 적용 (폰트 및 배경색 개선 버전)
+# 2. 디자인 적용 (따옴표 위치를 정확히 맞춘 코드입니다)
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap');
 
+    /* 배경색과 폰트 설정 */
     .stApp { 
         background-color: #F0F4F8; 
         font-family: 'Noto Sans KR', sans-serif !important;
     }
     
+    /* 상단 타이틀 디자인 */
     .mobile-title {
         font-size: 28px !important;
         color: #FFFFFF;
         font-weight: 800;
         text-align: center;
-        padding: 25px 15px;
+        padding: 30px 15px;
         background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-        border-radius: 0px 0px 20px 20px;
+        border-radius: 0px 0px 25px 25px;
         margin: -1rem -1rem 25px -1rem;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     
+    /* 카드형 박스 */
     .m-card {
         background-color: #FFFFFF;
         padding: 20px;
-        border-radius: 15px;
+        border-radius: 18px;
         margin-bottom: 20px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
+    /* 버튼 디자인 */
     .stButton>button {
         width: 100%;
-        height: 55px;
+        height: 60px;
         background: #10B981 !important;
         color: white !important;
-        border-radius: 12px !important;
+        border-radius: 15px !important;
         font-weight: 700 !important;
+        font-size: 18px !important;
+        border: none !important;
+    }
+    
+    /* 영상 제목 */
+    .video-label {
+        font-size: 14px;
+        font-weight: bold;
+        color: #64748B;
+        margin-bottom: 8px;
+        text-align: center;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -124,5 +138,6 @@ elif menu == "🧘 부위별 맞춤 영상":
 st.divider()
 
 st.markdown("<p style='text-align: center; color: #64748B; font-size: 12px;'>제작: 우석대학교 물리치료학과 김민지<br>본 사이트는 학술 목적으로 제작되었습니다.</p>", unsafe_allow_html=True)
+
 
 
