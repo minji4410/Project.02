@@ -10,7 +10,7 @@ st.markdown("""
 
     /* 배경색과 폰트 설정 */
     .stApp { 
-        background-color: #F0F4F8; 
+        background-color: #F5F1E8; 
         font-family: 'Noto Sans KR', sans-serif !important;
     }
     
@@ -60,7 +60,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
     
 # 2. 상단 헤더
-st.markdown('<div class="mobile-title">🦾 돌봄 가족 건강 센터</div>', unsafe_allow_html=True)
+st.markdown('<div class="mobile-title">🦾 돌봄 보호자, 노동자 근골격계 질환 예방하기</div>', unsafe_allow_html=True)
 
 # 3. 메인 메뉴 (모바일 터치가 쉬운 선택 박스)
 menu = st.selectbox("🎯 메뉴를 선택해 주세요", 
@@ -138,6 +138,7 @@ elif menu == "🧘 부위별 맞춤 영상":
 st.divider()
 
 st.markdown("<p style='text-align: center; color: #64748B; font-size: 12px;'>제작: 우석대학교 물리치료학과 김민지<br>본 사이트는 학술 목적으로 제작되었습니다.</p>", unsafe_allow_html=True)
+
 
 
 
