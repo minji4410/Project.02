@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 1. 페이지 설정
-st.set_page_config(page_title="돌봄 건강 센터", page_icon="🦾", layout="centered")
+st.set_page_config(page_title="돌봄 보호자, 노동자 근골격계 질환 예방하기", page_icon="🦾", layout="centered")
 
 # 2. 디자인 적용 (따옴표 위치를 정확히 맞춘 코드입니다)
 st.markdown("""
@@ -138,6 +138,7 @@ elif menu == "🧘 부위별 맞춤 영상":
 st.divider()
 
 st.markdown("<p style='text-align: center; color: #64748B; font-size: 12px;'>제작: 우석대학교 물리치료학과 김민지<br>본 사이트는 학술 목적으로 제작되었습니다.</p>", unsafe_allow_html=True)
+
 
 
 
